@@ -12,7 +12,7 @@ class main:
             object.__setattr__(self, key, value)  # Sets the existing variable
             for func in setFunctions:  # Loops through the functions in set
                 func(key, value)  # Calls those functions
-        except AttributeError:  # If it errors from running __getattribute__, it's as a declare
+        except AttributeError:  # If it errors from running __getattribute__, it's a declare
             object.__setattr__(self, key, value)  # Declares new variable
             for func in declareFunctions:  # Loops through declare functions
                 try:  # Made for testing to see if it can call functions
