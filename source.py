@@ -60,7 +60,7 @@ class meta:
             else:
                 logging.error('Not a function')
         else:
-            logging.error(f"Invalid type '{type}' | Available are declare and set")
+            logging.error(f"Invalid type '{data[1]}' | 'set', 'declare', 'get', 'delete' are options")
 
     setFunction = property(fset=_setFunction)
 Meta = meta()
