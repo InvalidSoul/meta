@@ -57,7 +57,7 @@ class main:
             else:
                 logging.error('Not a function')  # Custom error if it's not
         else:
-            logging.error(f"Invalid type '{type}' | Available are declare and set")
+            logging.error(f"Invalid type '{data[1]}' | 'set', 'declare', 'get', 'delete' are options")
 
     setFunction = property(fset=setFunction)
 meta = main()
